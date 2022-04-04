@@ -1,4 +1,4 @@
-/*Estrutura do site
+/*website structure
 */
 
 * {
@@ -33,6 +33,16 @@ body {
 
 /* Navigation bar
 */
+
+a:link,
+a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
 
 ul {
     margin: 0;
@@ -70,8 +80,8 @@ ul {
 
 body.home #navegation a#home,
 body.brazil #navegation a#brazil,
-body.international #international,
-body.home #photos a#photos {
+body.international a#international,
+body.photos a#photos {
     color: #fff;
     background: #de003e;
     cursor: text;
@@ -85,25 +95,156 @@ body.home #photos a#photos {
     background: #f5f5f5;
 }
 
+#side {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
 #primary {
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background: red;
+}
+
+#two-col #primary {
+    width: 555px;
+}
+
+#one-col #primary {
+    width: 750px;
+    margin: 0 0 20px 0;
 }
 
 #secundary {
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
-    background: blue;
 }
 
-#side {
-    width: 180px;
+
+/*Box*/
+
+.box {
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3 url(./imagens/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    padding: 5px;
+    background: #294c71;
+    color: #fff;
+}
+
+.box-content {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/*Format side menus*/
+
+#side ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#side ul a:hover {
+    background: url(./imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+
+
+/*Format form*/
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 160px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 0.5em;
+}
+
+
+/*Formatting images*/
+
+img.main-image {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+
+/*Formatting header*/
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.emphasis h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.interview h3 {
+    background: #de003e;
+}
+
+
+/*Formatting List News*/
+
+#list-news li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#list-news li a img {
     float: left;
-    margin: 0 0 20px -750px;
-    background: yellow;
+    margin: 5px;
+}
+
+#list-news li a {
+    text-decoration: none;
+}
+
+#list-news li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#list-news li a p {
+    font-size: 0.6em;
+    color: #000;
+}
+
+#list-news li:hover {
+    background: #eee;
+    cursor: pointer;
 }
 
 
